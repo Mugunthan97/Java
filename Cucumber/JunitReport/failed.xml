@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="133.625875">
+<testcase classname="To Validate Login page in amazon" name="To validate login page using invaid credencials" time="25.232671">
+<system-out><![CDATA[Given User in amazon home page..............................................passed
+When User Enter invalid "java@gmail.com"login id............................passed
+And User Click the continue button..........................................passed
+And User enter invalid "java@123" password..................................passed
+Then User close the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Validate Login page in amazon" name="To validate login page using invaid credencials 2" time="15.995574">
+<system-out><![CDATA[Given User in amazon home page..............................................passed
+When User Enter invalid "selenium@gmail.com"login id........................passed
+And User Click the continue button..........................................passed
+And User enter invalid "selenium@123" password..............................passed
+Then User close the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Validate Login page in amazon" name="To validate login page using invaid credencials 3" time="10.752886">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ap_password&quot;}&#10;  (Session info: chrome=95.0.4638.54)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MUGUNTHAN', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\MUGUNT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50972}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b08196e850fe1b2d852d5e468baf4d5e&#10;*** Element info: {Using=id, value=ap_password}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)&#13;&#10;&#9;at org.openqa.selenium.By$ById.findElement(By.java:188)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.stepdefination.AmazonLogin.user_enter_invalid_password(AmazonLogin.java:27)&#13;&#10;&#9;at ✽.User enter invalid &quot;frame@123&quot; password(file:src/test/resources/Features/Amazon.feature:8)&#13;&#10;"><![CDATA[Given User in amazon home page..............................................passed
+When User Enter invalid "framework@gmail.com"login id.......................passed
+And User Click the continue button..........................................passed
+And User enter invalid "frame@123" password.................................failed
+Then User close the browser.................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ap_password"}
+  (Session info: chrome=95.0.4638.54)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MUGUNTHAN', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\MUGUNT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50972}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b08196e850fe1b2d852d5e468baf4d5e
+*** Element info: {Using=id, value=ap_password}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.stepdefination.AmazonLogin.user_enter_invalid_password(AmazonLogin.java:27)
+	at ✽.User enter invalid "frame@123" password(file:src/test/resources/Features/Amazon.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="To Validate Login page in amazon" name="To validate login page using invaid credencials 4" time="14.159757">
+<system-out><![CDATA[Given User in amazon home page..............................................passed
+When User Enter invalid "sql@gmail.com"login id.............................passed
+And User Click the continue button..........................................passed
+And User enter invalid "sql@123" password...................................passed
+Then User close the browser.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Login Functionality in Facebook Application" name="To validate valid username and invalid password" time="13.866467">
+<system-out><![CDATA[Given User is in login page.................................................passed
+When user enter the valid username..........................................passed
+And user enter invalid password.............................................passed
+And user click submit button................................................passed
+Then User quit the browser..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate Login Functionality in Facebook Application" name="To validate invalid username and valid password" time="11.632537">
+<system-out><![CDATA[Given User is in login page.................................................passed
+When user enter the invalid username........................................passed
+And user enter valid password...............................................passed
+And user click submit button................................................passed
+Then User quit the browser..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Validate Login page in fb application" name="To validate invalid username and invalid password" time="41.985983">
+<failure message="java.io.IOException: Destination 'E:\Eclipse\Cucumber\Snaps' exists but is a directory&#13;&#10;&#9;at org.apache.commons.io.FileUtils.doCopyFile(FileUtils.java:1386)&#13;&#10;&#9;at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:885)&#13;&#10;&#9;at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:835)&#13;&#10;&#9;at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:802)&#13;&#10;&#9;at org.stepdefination.Fblogin.user_take_screenshot(Fblogin.java:52)&#13;&#10;&#9;at ✽.User take screenshot(file:src/test/resources/fblogin.feature:8)&#13;&#10;"><![CDATA[Given To open browswer and launch fb url....................................passed
+When To pass invalid username...............................................passed
+And To pass invalid password................................................passed
+And User click login btn....................................................passed
+Then User take screenshot...................................................failed
+And User close the browser..................................................skipped
+
+StackTrace:
+java.io.IOException: Destination 'E:\Eclipse\Cucumber\Snaps' exists but is a directory
+	at org.apache.commons.io.FileUtils.doCopyFile(FileUtils.java:1386)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:885)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:835)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:802)
+	at org.stepdefination.Fblogin.user_take_screenshot(Fblogin.java:52)
+	at ✽.User take screenshot(file:src/test/resources/fblogin.feature:8)
+]]></failure>
+</testcase>
+</testsuite>
